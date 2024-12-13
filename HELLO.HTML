@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var</title>
+</head>
+<body>
+    <script>
+        //primitive data value types
+        // let name="Abhinav";
+        // console.log(typeof(name));
+
+        // let mob=38493849;
+        // console.log(typeof(mob));
+
+        // let ismarried=false;
+        // console.log(typeof(ismarried));
+
+        // let city=null;
+        // console.log(typeof(city));
+
+        // let pincode;
+        // console.log(typeof(pincode));
+
+        // //refrence type
+
+        // //object: collection of its key and values
+        // //() represents function
+        // //{} represents object
+        // //[] represents array
+
+        // let my_info={
+        //     name:"naman",
+        //     age:30,
+        //     mob:948394933,
+        //     add:"delhi",
+        //     ismarried:false,
+        //     pincode:244901
+        // }
+        // console.log(my_info.name);// access object name using dot notation
+        // console.log(my_info.mob + " and address is " + my_info.add);
+        // console.log(my_info['mob']); // access object keys value uing bracket notation
+        // console.log(my_info.ismarried);
+
+        // //function
+        // function msg(){ // normal method of representing a function
+
+        // }
+
+        // let msg=function(){     // better method of representing a fxn used in REACT where everything is represented variable based.
+        //     console.log("thanks to visit us");
+        //     console.log(typeof(msg));;
+        // }
+
+        // // ARRAY: array is a colllection of anything ie: any data type
+        // let student=[
+        //     "prince",
+        //     30,
+        //     9048399443,
+        //     "p234@gmail.com",
+        //     false,
+        //     "delhi",
+        //     110092
+        // ];
+        // console.log(student[2]);
+    
+        let student={
+            name:["madar","prince","uday","tarzan"],
+            age: 30,
+            course:"web",
+            add:{
+                area:"nehru place",
+                city:"delhi",
+                pincode: 123232
+            },
+            getinfo:function(){
+                return this.name[1]+this.age
+            },
+            ismarried:true
+        };
+        console.log(student.getinfo()); //object with fnction
+        console.log(student.name[2]); //object with array
+        console.log(student.add.city); // object with object
+    </script>
+</body>
+</html>

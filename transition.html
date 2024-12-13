@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(82, 107, 107);
+            animation-name: controlText;
+            animation-duration: 4s;
+        }
+        #hola {
+            height: 400px;
+            width: 100 px;
+        }
+        @keyframes controlText {
+            from{
+                transform: translate(0px,0px);
+                scale: 0.5;
+
+            }
+            to{
+                transform: translate( 200px,00px);
+                scale: 2.5;
+
+            }
+        }
+        div:hover{
+            transform:scale3d(1.3);
+            transition: 3s;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div id="hola">
+    </div>
+    
+</body>
+</html>
